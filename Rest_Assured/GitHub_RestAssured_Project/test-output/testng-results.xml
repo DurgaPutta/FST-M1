@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Post Response{
+    "id": 117136958,
+    "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEeazD9Mm8Xwr0enGYP7oxRVWcXRupZ2iE6Z57baIHEC",
+    "url": "https://api.github.com/user/keys/117136958",
+    "title": "SSH Key 2",
+    "verified": true,
+    "created_at": "2025-02-17T05:32:56Z",
+    "read_only": false
+}]]>
+    </line>
+    <line>
+      <![CDATA[GET Response: {
+    "id": 117136958,
+    "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEeazD9Mm8Xwr0enGYP7oxRVWcXRupZ2iE6Z57baIHEC",
+    "url": "https://api.github.com/user/keys/117136958",
+    "title": "SSH Key 2",
+    "verified": true,
+    "created_at": "2025-02-17T05:32:56Z",
+    "read_only": false
+}]]>
+    </line>
+    <line>
+      <![CDATA[Delete Response: ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-02-17T11:02:53 IST" name="Default suite" finished-at="2025-02-17T11:02:58 IST" duration-ms="4822">
+    <groups>
+    </groups>
+    <test started-at="2025-02-17T11:02:53 IST" name="Default test" finished-at="2025-02-17T11:02:58 IST" duration-ms="4822">
+      <class name="GitHub">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:GitHub@c667f46]" started-at="2025-02-17T11:02:53 IST" name="setUp" finished-at="2025-02-17T11:02:54 IST" duration-ms="872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="postSSH()[pri:1, instance:GitHub@c667f46]" started-at="2025-02-17T11:02:54 IST" name="postSSH" finished-at="2025-02-17T11:02:57 IST" duration-ms="3047" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Post Response{
+    "id": 117136958,
+    "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEeazD9Mm8Xwr0enGYP7oxRVWcXRupZ2iE6Z57baIHEC",
+    "url": "https://api.github.com/user/keys/117136958",
+    "title": "SSH Key 2",
+    "verified": true,
+    "created_at": "2025-02-17T05:32:56Z",
+    "read_only": false
+}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postSSH -->
+        <test-method signature="getUserDetails()[pri:2, instance:GitHub@c667f46]" started-at="2025-02-17T11:02:57 IST" name="getUserDetails" finished-at="2025-02-17T11:02:57 IST" depends-on-methods="GitHub.postSSH" duration-ms="405" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[GET Response: {
+    "id": 117136958,
+    "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEeazD9Mm8Xwr0enGYP7oxRVWcXRupZ2iE6Z57baIHEC",
+    "url": "https://api.github.com/user/keys/117136958",
+    "title": "SSH Key 2",
+    "verified": true,
+    "created_at": "2025-02-17T05:32:56Z",
+    "read_only": false
+}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getUserDetails -->
+        <test-method signature="deleteUserDetails()[pri:3, instance:GitHub@c667f46]" started-at="2025-02-17T11:02:57 IST" name="deleteUserDetails" finished-at="2025-02-17T11:02:58 IST" duration-ms="402" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Delete Response: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteUserDetails -->
+      </class> <!-- GitHub -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
